@@ -28,7 +28,9 @@ class ViewController: UIViewController {
 
 			inpuText.leadingAnchor.constraint(equalTo: labelName.trailingAnchor,constant: 8),
 			inpuText.firstBaselineAnchor.constraint(equalTo: labelName.firstBaselineAnchor),
+			inpuText.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -8)
 		])
+		labelName.setContentHuggingPriority(UILayoutPriority(rawValue: 251), for: .horizontal)
 		
 	}
 	
